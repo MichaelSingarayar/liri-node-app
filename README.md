@@ -12,6 +12,9 @@ From the command line using node the user will search Spotify using "spotify-thi
 - If no artist search is provided LIRI will return searches for "The Sign".
 
 
+![spotify](https://user-images.githubusercontent.com/43361200/50544334-ed012100-0bae-11e9-80b6-92f234243666.gif)
+
+
 
 # Movie
 From the command line using node the user will search OMBD using "movie-this" along with a the title and return:
@@ -41,5 +44,7 @@ From the command line using node the user will search Bands in Town using "conce
 
 # Random
 From the command line using node the user will search a txt file using "do-what-it-says" will return a random song from Spotify
+
+![do-what](https://user-images.githubusercontent.com/43361200/50544333-eb375d80-0bae-11e9-8bb9-23f6aaf6e319.gif)
 
 
