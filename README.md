@@ -3,7 +3,7 @@
 LIRI uses API calls from command line input to give you information about: movies, concerts, and music. It does this using OMBD, Spotify, and Bands in Town APIs.
 
 # Spotify
-From the command line using node the user will search Spotify using "spotify-this-song" along with an artist and return:
+From the command line using node the user will search Spotify using "spotify-this-song" along with a song and return:
 
 - Artist(s)
 - The song's name
@@ -17,7 +17,7 @@ From the command line using node the user will search Spotify using "spotify-thi
 
 
 # Movie
-From the command line using node the user will search OMBD using "movie-this" along with a the title and return:
+From the command line using node the user will search OMBD using "movie-this" along with a movie title and return:
 
 - Title of the movie.
 - Year the movie came out.
