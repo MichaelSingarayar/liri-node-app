@@ -32,4 +32,3 @@ The song's name
 A preview link of the song from Spotify
 The album that the song is from
 Because this is reading the file, the user can change the txtfile, and LIRI will read whatever is inputted.
-
