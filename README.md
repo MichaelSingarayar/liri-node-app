@@ -47,4 +47,19 @@ From the command line using node the user will search a txt file using "do-what-
 
 ![do-what](https://user-images.githubusercontent.com/43361200/50544333-eb375d80-0bae-11e9-8bb9-23f6aaf6e319.gif)
 
+# Technology Used
+
+- Node.js
+- NPM packages
+  -Axios
+  -SpotifyAPI
+  -OMBD API
+  -BandsInTownAPI
+  -request
+  -fs (for file manipulations — including opening, reading, appending)
+
+# Author
+
+Michael Singarayar
+
 
