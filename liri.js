@@ -31,7 +31,7 @@ var moviethis = function (movie) {
             console.log("Plot: " + results.Plot);
             console.log("Actors: " + results.Actors);
 
-            var info = "\r\n" + "movie-this " + movie + "\r\n" + "--------------------------------------------" +  "\r\n" + "Title: " + results.Title + "\r\n" + "Year: " + results.Year + "\r\n" +
+            var info = "movie-this " + movie + "\r\n" + "--------------------------------------------" + "\r\n" + "Title: " + results.Title + "\r\n" + "Year: " + results.Year + "\r\n" +
                 "IMDB Rating: " + results.Ratings[0].Value + "\r\n" + "Rotten Tomatoes Score: " + results.Ratings[1].Value + "\r\n" +
                 "Country: " + results.Country + "\r\n" + "Language: " + results.Language + "\r\n" + "Plot: " + results.Plot + "\r\n" +
                 "Actors: " + results.Actors + "\r\n" + "--------------------------------------------" + "\r\n"
@@ -108,20 +108,20 @@ var spotifythis = function (song) {
 }
 
 var appendthis = function (file) {
-    fs.appendFile("random.txt", file, function (err) {
+    fs.appendFile("log.txt", file, function (err) {
         if (err) {
             return console.log("There was an error")
         }
     })
 }
 
-if (input == "concert-this") {
+if (input === "concert-this") {
     var info = arg.slice(3, arg.length)
     var artist = ""
     for (var i in info) {
         if (i == info.length - 1) {
             artist = artist + info[i]
-            
+
         } else {
             artist += info[i] + " "
         }
@@ -129,7 +129,7 @@ if (input == "concert-this") {
     }
     artistthis(artist);
 
-} else if (input == "spotify-this-song") {
+} else if (input === "spotify-this-song") {
     if (typeof (process.argv[3]) == "undefined") {
         var song = "The Sign"
     } else {
@@ -145,7 +145,7 @@ if (input == "concert-this") {
     }
     spotifythis(song);
 
-} else if (input == "movie-this") {
+} else if (input === "movie-this") {
     if (typeof (process.argv[3]) == "undefined") {
         var movie = "Mr. Nobody"
     } else {
@@ -161,27 +161,27 @@ if (input == "concert-this") {
     }
     moviethis(movie);
 
-} else if (input == "do-what-it-says") {
+} else if (input === "do-what-it-says") {
     fs.readFile("random.txt", "utf8", function (error, data) {
-            if (error) {
-                return console.log(error);
-            }
-            var arr = data.split(",")
-            var selection = arr;
+        if (error) {
+            return console.log(error);
+        }
+        var arr = data.split(",")
+        var sec = arr;
 
 
 
 
-            if (selection[0].trim() === "concert-this") {
-                artistthis(selection[1])
+        if (sec[0].trim() == "concert-this") {
+            artistthis(sec[1])
 
 
 
-            } else if (selection[0].trim() === "spotify-this-song") {
-                spotifythis(selection[1])
-            } else if (selection[0].trim() === "movie-this") {
-                moviethis(selection[1])
+        } else if (sec[0].trim() == "spotify-this-song") {
+            spotifythis(sec[1])
+        } else if (sec[0].trim() == "movie-this") {
+            moviethis(sec[1])
 
-            }
+        }
     })
 }
