@@ -11,7 +11,6 @@ From the command line using node the user will search Spotify using "spotify-thi
 - A preview link of the song from Spotify
 - If no artist search is provided LIRI will return searches for "The Sign".
 
-![spotify](https://user-images.githubusercontent.com/43361200/50544269-0acd8680-0bad-11e9-8cff-8dba2c8309dd.gif)
 
 
 # Movie
