@@ -51,12 +51,13 @@ From the command line using node the user will search a txt file using "do-what-
 
 - Node.js
 - NPM packages
-  -Axios
-  -SpotifyAPI
-  -OMBD API
-  -BandsInTownAPI
-  -request
-  -fs (for file manipulations — including opening, reading, appending)
+  - Axios
+  - SpotifyAPI
+  - OMBD API
+  - BandsInTownAPI
+  - request
+  - dotenv (for password security for Spotify)
+  - fs (for file manipulations — including opening, reading, appending)
 
 # Author
 
