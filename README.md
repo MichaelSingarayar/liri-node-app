@@ -25,12 +25,18 @@ From the command line using node the user will search OMBD using "movie-this" al
 - Plot of the movie.
 - Actors in the movie.
 
+![movie](https://user-images.githubusercontent.com/43361200/50544282-7dd6fd00-0bad-11e9-8e58-db137ab14ea6.gif)
+
 # Concert
 From the command line using node the user will search Bands in Town using "concert-this" along with a the singer/group and return:
 
 - Name of the venue
 - Venue location
 - Date of the Event
+
+![concert](https://user-images.githubusercontent.com/43361200/50544281-79aadf80-0bad-11e9-8ce5-4873a595b087.gif)
+
+
 
 
 # Random
