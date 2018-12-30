@@ -43,7 +43,7 @@ From the command line using node the user will search Bands in Town using "conce
 
 
 # Random
-From the command line using node the user will search a txt file using "do-what-it-says" will return a random song from Spotify
+From the command line using node the user will search a txt file using "do-what-it-says" will return "I want it that way" songs from Spotify. It pulls the input from a random.txt file and can be changed to any of the other command line promts with a search query.
 
 ![do-what](https://user-images.githubusercontent.com/43361200/50544333-eb375d80-0bae-11e9-8bb9-23f6aaf6e319.gif)
 
